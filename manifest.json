@@ -1,0 +1,16 @@
+{
+  "name": "PFR to Getty Images Button",
+  "version": "0.1",
+  "description": "Add a button to PFR pages that links to a pre-filled Getty images search.",
+  "manifest_version": 3,
+  "icons": {
+    "128": "128.png"
+  },
+  "content_scripts": [
+    {
+      "css": ["pfr2getty.css"],
+      "js": ["pfr2getty.js"],
+      "matches": ["https://*.pro-football-reference.com/*"]
+    }
+  ]
+}
